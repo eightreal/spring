@@ -13,8 +13,8 @@ import javax.persistence.*;
 @Table(name = "user")
 public class User {
     @Id
-    @GeneratedValue
-    public Long id;
+    @Column(name = "phone")
+    public String phone;
     @Column(name = "name")
     public String name;
     @Column(name = "password")

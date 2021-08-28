@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 public interface UserDao extends JpaRepository<User, Long> {
-    @Query(value = "select new com.eight.spring.util.User(id, name, password) \n" +
-            "from User where id = :id")
-    User findUserById(@Param("id") Long id);
+    @Query(value = "select new com.eight.spring.util.User(phone, name, password) \n" +
+            "from User where phone = :phone")
+    User findUserByPhone(@Param("phone") String phone);
 }
