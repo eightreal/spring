@@ -35,7 +35,7 @@ public class UserSignServiceImp implements UserSignService {
         User user = new User(phone, name, password);
 
         try {
-            userDao.save(user);
+            this.userDao.save(user);
             result.put("result", "succeed");
             return ResponseEntity.ok(result);
         }catch (Exception e){

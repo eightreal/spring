@@ -1,6 +1,6 @@
 package com.eight.spring.controller.imp;
 
-import com.eight.spring.controller.UserSignIn;
+import com.eight.spring.controller.UserSignInController;
 import com.eight.spring.service.UserSignService;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class UserSignInImp implements UserSignIn {
+public class UserSignInControllerImp implements UserSignInController {
     @Autowired
     private UserSignService userSignService;
 
